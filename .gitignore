@@ -1,0 +1,22 @@
+# OSX
+.DS_Store
+.pytest_cache/
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+
+# VSCode
+.vscode
+.devcontainer
+.history
+
+# PyCharm
+.idea
+
+# directory in which all graide artefacts are saved
+data
+
+# hydra multirun config file
+multirun.yaml
