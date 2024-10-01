@@ -1,0 +1,25 @@
+[flake8]
+ignore =
+	# C812: Missing trailing comma. Deactivated because of incompatibility with black.
+	C812,
+	# C815 missing trailing comma in Python 3.5+. Deactivated because of incompatibility with black.
+	C815
+	# E203: Space before :. Deactivated because of incompatibility with black, see https://github.com/ambv/black#slices.
+	E203,
+	# E402: Module level import not at top of file.
+	E402,
+	# I100: Import statements are in the wrong order. Deactivated because we often need to import `future` at the beginning
+	#       for Python2/3 compatibility.
+	I100,
+	# I201: Missing newline between import groups. Same as I100.
+	I201,
+	# W503: Handling of breaking around binary operators. Necessary because of Flake8 update in
+	#       https://github.com/merantix/core/commit/dee61ff623b2cb08d6827afcea502edb9a8f76fb
+	W503,
+	# W605: Invalid escape sequence 'x'. Necessary because of Flake8 update in
+	#       https://github.com/merantix/core/commit/dee61ff623b2cb08d6827afcea502edb9a8f76fb
+	W605,
+
+max_line_length = 120
+import_order_style = appnexus
+application_package_names = graide

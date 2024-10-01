@@ -1,0 +1,14 @@
+defaults:
+  - hydra-settings
+  - entrypoint/RunScreeningEntrypointConfig@_here_
+  - strategy: StandaloneAI
+  - _self_
+
+# The output decision level, i.e. the level at which we wish to evaluate the performance of the specified strategy.
+# NB: this was set to PROGRAM to generate all results in the published paper.
+decision_level: PROGRAM
+
+# The screening system to evaluate
+screening_system: GERMANY
+
+dataset_name: "germany_val" # | "germany_test"

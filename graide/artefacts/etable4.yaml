@@ -1,0 +1,7 @@
+defaults:
+  - table2
+  - _self_
+
+threshold_setting_dataset: "uk_val"
+test_dataset: "uk_test"
+screening_system: UK

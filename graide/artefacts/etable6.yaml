@@ -1,0 +1,12 @@
+defaults:
+  - table2
+  - _self_
+
+threshold_setting_dataset: "sweden_val"
+test_dataset: "sweden_test"
+screening_system: GERMANY
+
+strategy_names:
+  - NormalTriaging
+  - ProgramLevelDD
+  - StandaloneAI

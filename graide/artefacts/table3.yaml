@@ -1,0 +1,17 @@
+defaults:
+  - hydra-settings
+  - entrypoint/TablePathAllocationsEntrypointConfig@_here_
+  - _self_
+
+threshold_setting_dataset: "germany_val"
+test_dataset: "germany_test"
+screening_system: GERMANY
+
+strategy_names:
+  - NormalTriaging
+  - RadLevelDD
+  - ReaderReplacement
+  - ProgramLevelDD
+  - Graide
+  - DeferralToASingleReader
+  - StandaloneAI
