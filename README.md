@@ -1,6 +1,6 @@
 # GrAIde
 
-This repository contains the code and data necessary to reproduce the figures and tables of the Lancet Digital Health paper "Strategies for integrating artificial intelligence into mammography screening programs. A retrospective simulation analysis." or to evaluate any of the strategies on your own data.
+This repository contains the code and data necessary to reproduce the figures and tables of the Lancet Digital Health paper "Strategies for integrating artificial intelligence into mammography screening programs. A retrospective simulation analysis" or to evaluate any of the strategies on your own data.
 
 If you find GrAIde useful in your research, please use the following BibTeX entry for citation.
 
@@ -19,6 +19,7 @@ conda create -n graide python=3.10
 source activate graide
 ```
 before installing the required dependencies via
+	Is there sth. missing here? Before installing depedencies do what?
 ```bash
 conda install hdf5
 pip install -r requirements.txt
@@ -35,6 +36,7 @@ Each dataframe provided has one row per study, and the following columns:
 - y_send2cc: whether or not the study went to the consensus conference (or arbitration in the UK)
 - y_program: whether or not the study was recalled
 - y_score_[bal/spec]: the suspicious score assigned to the study by each of two AI models
+		Review comment: What about sens again?
 - weights: the sample weight of the study used by inverse probability weighting
 - age: patient age, if available (NaN otherwise)
 

@@ -3,6 +3,8 @@
 # Make sure the script aborts if any of the intermediate steps fail
 set -euo pipefail  # https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
 
+mkdir -p data/
+
 # Download datasets
 for filename in germany_val.csv germany_test.csv uk_val.csv uk_test.csv sweden_val.csv sweden_test.csv; do
   if ! [[ -e data/$filename ]]; then
