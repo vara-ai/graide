@@ -5,7 +5,16 @@ This repository contains the code and data necessary to reproduce the figures an
 If you find GrAIde useful in your research, please use the following BibTeX entry for citation.
 
 ```BibTeX
-TODO
+@article{fisches2024strategies,
+  title={Strategies for integrating artificial intelligence into mammography screening programmes: a retrospective simulation analysis},
+  author={Fisches, Zacharias V and Ball, Michael and Mukama, Trasias and {\v{S}}tih, Vilim and Payne, Nicholas R and Hickman, Sarah E and Gilbert, Fiona J and Bunk, Stefan and Leibig, Christian},
+  journal={The Lancet Digital Health},
+  volume={6},
+  number={11},
+  pages={e803--e814},
+  year={2024},
+  publisher={Elsevier}
+}
 ```
 
 ## Installation
